@@ -1,8 +1,7 @@
 # Personal Bot
 - [x] Telegram: https://telegram.me/ames0k0_personal_bot
 
-### Code: `/code`
-Reply to a message to get a code (input example)
+### `/code` :: Reply to a message to get a code (input example)
 ```
 # Input
 https://github.com/krau/kmua-bot/blob/v2/kmua/callbacks/waifu.py#L131-L133
@@ -21,5 +20,6 @@ if user.id == waifu.married_waifu_id:
 ```
 Supported sites
   - [x] github.com
+
 Supported markdown code
   - [x] python
