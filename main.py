@@ -30,12 +30,20 @@ async def command_start_handler(message: Message) -> None:
 
 @dp.message(Command('code'))
 async def code(message: Message) -> None:
+  chat = message.chat
   msg = message.reply_to_message
+
   if not msg:
     await message.reply('Reply to the message')
   if not msg.text:
     await message.reply('Reply message no text')
-  await message.reply(get_code(msg.text.strip()))
+
+  try:
+    await chat.delete_message(message.message_id)
+  except Exception:
+    pass
+
+  await msg.reply(get_code(msg.text.strip()))
 
 
 async def main() -> None:
