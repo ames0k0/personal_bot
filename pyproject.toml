@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.8"
 aiogram = "^3.6.0"
 python-dotenv = "^1.0.1"
 
