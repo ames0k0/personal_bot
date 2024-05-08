@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "personal-bot"
+version = "0.1.0"
+description = "Personal Bot"
+authors = ["Yóunǎi <c0d3r.nodiru.gaji@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.6.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
