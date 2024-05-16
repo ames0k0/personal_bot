@@ -43,7 +43,7 @@ def _github_code_scope(
 ) -> tuple[int, int]:
   scopes = scope.split(scope_delimiter)
   for idx, scope in enumerate(scopes):
-    line = findall('\d+', scope)
+    line = findall(r'\d+', scope)
     if not line:
       continue
     scopes[idx] = int(line.pop())
